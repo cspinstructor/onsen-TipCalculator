@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"
+    />
+    <title>Onsen Tip Calculator</title>
+    <link rel="stylesheet" href="css/onsenui.css" />
+    <link rel="stylesheet" href="css/onsen-css-components.min.css" />
+  </head>
+  <body>
+    <ons-page>
+      <ons-toolbar>
+        <div class="center">Framework Tip Calculator</div>
+      </ons-toolbar>
+      <section style="padding: 8px;">
+        <div style="margin-bottom: 20px;">
+          <input
+            class="text-input text-input--material"
+            placeholder="Bill Amount"
+            type="text"
+            style="width:100%"
+            required
+            id="billAmount"
+          />
+        </div>
+        <div style="margin-bottom: 20px;">
+          <ons-range
+            style="width: 75%;"
+            value="18"
+            min="0"
+            max="50"
+            step=".5"
+            id="tipRange"
+          ></ons-range>
+          <output id="percentOut">18%</output>
+        </div>
+        <div>
+          <ons-button modifier="large" id="btnCalculate"
+            >Calculate Tip</ons-button
+          >
+        </div>
+      </section>
+      <section style="padding: 8px;">
+        <output id="result"></output>
+      </section>
+    </ons-page>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/onsenui.min.js"></script>
+  </body>
+</html>
