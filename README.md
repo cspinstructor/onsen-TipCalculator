@@ -1,6 +1,6 @@
-# A Blank PhoneGap App
+# Onsen Tip Calculator
 
-## Usage
+## See the forked original
 
 Based on https://www.youtube.com/watch?v=SzDiUgZkTso
 
